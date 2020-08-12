@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="res/css/style.css">
+    <title>Login | Registration</title>
+</head>
+<body>
+    <div class="box" id="login-box">
+        <img src="./res/images/avatar.png" class="avatar">
+        <h2 style="text-align: center;margin-top: -30px;">login here</h2>
+        <div class="other-login-way facebook">
+            <img src="./res/images/facebook.png" style="width: 30px;margin: 5px 5px">
+            <span class="owl-text">Continue with Facebook</span>
+        </div>
+        <div class="other-login-way google">
+            <img src="./res/images/google.png" style="width: 32px;margin: 5px 5px">
+            <span class="owl-text">Continue with Google</span>
+        </div>
+        <div class="other-login-way twitter">
+            <img src="./res/images/twitter.png" style="width: 30px;margin: 5px 5px">
+            <span class="owl-text">Continue with Twitter</span>
+        </div>
+        <center>Or</center>
+        <br>
+        <form>
+            <label for id="userinfo">Username / Email / Phone no.</label>
+            <input type="text" id="userinfo">
+            <label for id="password">Password</label>
+            <input type="password" id="password">
+            <input type="submit" value="Login">
+            <br><br>
+            <center><a class="new-account" id="create-account">Don't have an account? Click Here</a></center>
+        </form>
+    </div>
+    <br>
+    <div class="box" id="reg-box">
+            <h2 style="text-align: center;">Register here</h2>
+            <form>
+                <label>Fullname</label>
+                <div class="field-wrap">  
+                    <input type="text" id="firstname" placeholder="Firstname">
+                    <input type="text" id="lastname" placeholder="Lastname">
+                </div>
+                <label for id="username">Username</label>
+                <input type="text" id="username">
+
+                <label for id="password">Password</label>
+                <input type="password" id="reg-pass">
+				
+				<label for id="dob">Date of birth</label><br>
+                <input type="date" id="dob">
+
+				<label for id="email">Email</label>
+                <input type="email" id="email">
+
+                <label for id="phone-no">Contact No.</label>
+                <input type="text" id="phone-no">
+
+                <label>Location</label>
+                <div class="field-wrap">  
+                    <input type="text" id="country" placeholder="Country">
+                    <input type="text" id="state" placeholder="State">
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                
+                <label>Education Detail</label>
+                <div class="field-wrap">  
+                    <input type="text" id="college" placeholder="College if any">
+                    <input type="text" id="school" placeholder="School">
+                </div>
+
+                <label for id="job">Job Detail</label>
+                <input type="text" id="job">
+                
+                <label for id="skills">Skills</label>
+                <input type="text" id="job" placeholder="Enter skills separated by comma">
+
+                <input type="submit" value="Register"><br>          
+            </form>
+    </div>
+    <script src="./res/js/index.js"></script>
+</body>
+</html>
